@@ -49,6 +49,29 @@ section .heading h2 {
   margin-top: 20px;
   }
 
+/* MENU */
+.navbar {
+    background-color: #d82c2e;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-pills .nav-link{
+    color: #fff !important;
+    text-align: center;
+}
+.nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
+    color: #d82c2e !important;
+    background-color: #fff !important;
+}
+.navbar-toggler{
+    color: #fff !important;
+    border-style: none;
+}
+
+
 /*ABOUT*/
 #about{
   padding-top:100px;
@@ -60,12 +83,11 @@ section .heading h2 {
   text-align: center;
   margin: 0 auto;
   float: none;
-  width: 320px;
-  height: 320px;
+  width: 340px;
+  height: 300px;
 }
-#about .profile-picture img{
 
-}
+
 #about.heading h1{
   color: #fff;
   text-transform: uppercase;
