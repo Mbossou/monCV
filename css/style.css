@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 
 img{
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 ul, ol {
@@ -35,7 +35,7 @@ section .heading h2 {
 .red-divider{
   width: 100px;
   height: 2px;
-  background: #d82c2e;
+  background: #F8E89A;
   margin: 0 auto;
 }
 .white-divider{
@@ -51,7 +51,7 @@ section .heading h2 {
 
 /* MENU */
 .navbar {
-    background-color: #d82c2e;
+    background-color: rgb(248,232,154,0.80);
     font-size: 12px;
     border-bottom: 1px solid #fff;
     letter-spacing: 4px;
@@ -59,11 +59,11 @@ section .heading h2 {
     font-weight: bold;
 }
 .nav-pills .nav-link{
-    color: #fff !important;
+    color: rgb(51,51,51) !important;
     text-align: center;
 }
 .nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-    color: #d82c2e !important;
+    color: rgb(51,51,51) !important;
     background-color: #fff !important;
 }
 .navbar-toggler{
@@ -74,26 +74,26 @@ section .heading h2 {
 
 /*ABOUT*/
 #about{
-  padding-top:100px;
-  background-image: url(C:/Users/Mélissa/Documents/udemy/CV/images/wallpaper.jpeg);
+  padding-top:50px;
+  background-image: url("wallpaper3.jpg");
   background-size: 100%;
   background-attachment: fixed;
 }
 .profile-picture{
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   float: none;
   width: 340px;
   height: 300px;
 }
 
 
-#about.heading h1{
-  color: #fff;
+#about .heading h1{
+  color: rgb(51,51,51,0.77);
   text-transform: uppercase;
 }
-#about.heading h3{
-  color: #000;
+#about .heading h3{
+  color: rgb(51,51,51,0.8);
 }
 .button1{
   font-weight: bold;
@@ -108,7 +108,7 @@ section .heading h2 {
 }
 .button1:hover{
   background: #fff;
-  color: #d82c2e;
+  color: #485410;
   text-decoration: none;
 }
 
@@ -118,7 +118,9 @@ section .heading h2 {
 }
 
 #skills .heading h2 {
-  color: #d82c2e;
+  color: #485410;
+  text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
+
 }
 
 #skills .progress {
@@ -128,7 +130,7 @@ section .heading h2 {
 }
 
 #skills .progress-bar {
-  background: #d82c2e;
+  background: #485410;
 }
 #skills .progress h5{
   text-shadow: 1px 1px 1px #000;
@@ -139,11 +141,12 @@ section .heading h2 {
 /*EXPERIENCE*/
 
 #experience {
-  background: #d82c2e;
+  background: #F8E89A;
 }
 
 #experience .heading h2 {
   color: #fff;
+  text-shadow: 0.15px 0.15px 0.15px rgb(51,51,51,0.77);
 }
 
 .timeline {
@@ -157,7 +160,7 @@ section .heading h2 {
   position: absolute;
   content: " ";
   width: 5px;
-  background-color: #333;
+  background-color: #485410;
   left: 50%;
   margin-left: -2.5px;
 }
@@ -177,7 +180,7 @@ section .heading h2 {
 }
 
 .timeline li .timeline-badge  {
-  color: #d82c2e;
+  color: #485410;
   width: 50px;
   line-height: 50px;
   font-size: 20px;
@@ -243,7 +246,7 @@ section .heading h2 {
 }
 
 .timeline-heading h4 {
-  color: #d82c2e;
+  color: rgb(72,84,16,0.8);
 }
 
 /* FORMATION */
@@ -253,7 +256,9 @@ section .heading h2 {
 }
 
 #formation .heading h2 {
-  color: #d82c2e;
+  color: #485410;
+  text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
+
 }
 
 .formation-block {
@@ -278,7 +283,7 @@ section .heading h2 {
 }
 
 .formation-block h3 {
-  color: #d82c2e;
+  color: rgb(51,51,51,0.65);
 }
 
 .formation-block h4 {
@@ -291,14 +296,17 @@ section .heading h2 {
 
 .formation-block .red-divider {
   margin-bottom: 20px;
+  background: #485410 !important;
 }
 
 /*PORTFOLIO*/
 #portfolio {
-  background: #d82c2e;
+  background: #F8E89A;
 }
 #portfolio .heading h2 {
   color: #fff;
+  text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
+
 }
 
 #portfolio .col-sm-4 {
@@ -322,17 +330,18 @@ section .heading h2 {
 }
 
 #recommandations h2 {
-  color: #d82c2e;
+  color: #485410;
+  text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 }
 
 .carousel-control-prev {
   background-image:none;
-  color: #d82c2e;
+  color: #485410;
 }
 
 .carousel-control-next {
   background-image:none;
-  color: #d82c2e;
+  color: #485410;
 }
 .carousel-indicators {
 bottom: -40px;
@@ -344,11 +353,11 @@ bottom: -40px;
   text-indent: 0;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid #d82c2e;
+  border: 1px solid #485410;
 
 }
 .carousel-indicators li.active {
-  background-color: #d82c2e;
+  background-color: #485410;
 }
 
 #myCarousel .carousel-item {
@@ -356,7 +365,7 @@ bottom: -40px;
 }
 
 #myCarousel .carousel-item h3 {
-  color: #d82c2e;
+  color: #485410;
   font-style: italic;
 }
 
@@ -367,7 +376,7 @@ footer {
 }
 footer .fas {
   font-size: 25px;
-  color: #d82c2e;
+  color: #F8E89A;
   height: 30px;
 }
 footer .fas:hover {
