@@ -153,6 +153,10 @@ section .heading h2 {
   padding: 30px 10px;
   position: relative;
 }
+/*
+.timeline-body ul {
+  list-style: circle;
+}*/
 
 .timeline:before { /* avant l'elmt timeline fais moi ça*/
   top: 0;
@@ -168,6 +172,18 @@ section .heading h2 {
 .timeline > li { /* le > veut dire que .timeline = le direct parent de l'élemt indiqué */
   margin-bottom: 20px;
   position: relative;
+}
+.timeline-body p {
+   text-align: justify;
+   font-size: 0.9rem;
+   margin-bottom: 0.35rem;
+
+  }
+
+.timeline-body p i {
+  font-size: 0.4rem;
+  display: inline;
+  font-weight: 600;
 }
 
 .timeline > li:after {
@@ -262,7 +278,9 @@ section .heading h2 {
 }
 
 .formation-block {
-  width: 80%;
+  /*width: 80%;*/
+  width: 100%;
+  height: 90%;
   margin: 0 auto;
   text-align: center;
   padding: 30px;
@@ -284,14 +302,17 @@ section .heading h2 {
 
 .formation-block h3 {
   color: rgb(51,51,51,0.65);
+  font-size: 1.5rem;
 }
 
 .formation-block h4 {
   margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
 .formation-block p {
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .formation-block .red-divider {
@@ -325,13 +346,22 @@ section .heading h2 {
 }
 
 /*Recommandations*/
-#recommandations {
+/*#recommandations {
   background: #fff;
 }
 
 #recommandations h2 {
   color: #485410;
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
+}
+*/
+#recommandations {
+  background: #F8E89A;
+}
+#recommandations h2 {
+  color: #fff;
+  text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
+
 }
 
 .carousel-control-prev {
