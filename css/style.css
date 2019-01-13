@@ -71,6 +71,35 @@ section .heading h2 {
     border-style: none;
 }
 
+#accordeon .titre {
+  display: block;
+}
+/* ACCORDION
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+ Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+ Style the accordion panel. Note: hidden by default
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+*/
 
 /*ABOUT*/
 #about{
@@ -115,12 +144,34 @@ section .heading h2 {
 /*SKILLS*/
 #skills{
   background: #fff;
-}
 
+}
+#skills ul {
+  list-style: initial!important;
+}
+#skills ul li {
+  text-align: justify;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+#skills .card-body p {
+  text-align: justify;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
 #skills .heading h2 {
   color: #485410;
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
+}
+#skills .accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+#skills .accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
 }
 
 #skills .progress {

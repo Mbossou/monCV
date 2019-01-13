@@ -10,3 +10,14 @@ $(function(){
     });
 
 })
+
+//$(function(){
+
+  //  $('#accordeon').accordion(); // appel du plugin
+  //  $('#accordeon').accordion({
+    //  collapsible : true;
+    //  header : '.titre';
+
+//});
+
+//})
