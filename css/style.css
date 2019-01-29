@@ -108,12 +108,17 @@ section .heading h2 {
   background-size: 100%;
   background-attachment: fixed;
 }
+
+#about img {
+  border-radius: 60%;
+  height: 16rem;
+  width: 13rem;
+}
 .profile-picture{
   text-align: center;
   margin: 0 auto 30px auto;
   float: none;
-  width: 340px;
-  height: 300px;
+
 }
 
 
@@ -150,12 +155,10 @@ section .heading h2 {
   list-style: initial!important;
 }
 #skills ul li {
-  text-align: justify;
   font-size: 0.9rem;
   margin-bottom: 0.35rem;
 }
 #skills .card-body p {
-  text-align: justify;
   font-size: 0.9rem;
   margin-bottom: 0.35rem;
 }
@@ -185,7 +188,7 @@ section .heading h2 {
 }
 #skills .progress h5{
   text-shadow: 1px 1px 1px #000;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin: auto auto;
 }
 
