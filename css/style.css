@@ -105,7 +105,8 @@ section .heading h2 {
 #about{
   padding-top:50px;
   background-image: url("wallpaper3.jpg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -123,17 +124,21 @@ section .heading h2 {
 
 
 #about .heading h1{
-  color: rgb(51,51,51,0.77);
+  color:#39312d;
   text-transform: uppercase;
 }
 #about .heading h3{
-  color: rgb(51,51,51,0.8);
+  color:rgb(20,20,20,0.77);
 }
+#about .heading h5{
+  color:rgb(20,20,20,0.77);
+}
+
 .button1{
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
+  color:#39312d;
+  border: 2px solid #39312d;
   display: inline-block;
   margin-top: 20px;
   padding: 18px 50px;
@@ -142,8 +147,9 @@ section .heading h2 {
 }
 .button1:hover{
   background: #fff;
-  color: #485410;
+  color: #39312d;
   text-decoration: none;
+  border: 2px solid #fff;
 }
 
 /*SKILLS*/
@@ -329,8 +335,10 @@ section .heading h2 {
   color: #485410;
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
-}
-
+}/*
+.col-md-6 {
+  width: 372px;
+}*/
 .formation-block {
   /*width: 80%;*/
   width: 100%;
@@ -379,6 +387,13 @@ section .heading h2 {
   background: #F8E89A;
   padding: 45px 0 0 0;
 }
+#portfolio p {
+  width: 22rem;
+  margin: 0 auto;
+}
+#portfolio #texte {
+  margin-bottom: 5rem;
+}
 #portfolio .heading h2 {
   color: #fff;
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
@@ -396,8 +411,8 @@ section .heading h2 {
 }
 
 #portfolio .thumbnail img {
-  width: 65%;
-  height: 60%;
+  width: 20rem;
+  height: 20rem;
   display: block;
   margin: auto;
   filter: greyscale(100%);
