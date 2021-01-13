@@ -4,6 +4,15 @@ body{
   font-family: "lato", sans-serif;
 }
 
+:root {
+  --main-blue: #708084;
+  --lightblue-color: #a3d7de;
+  --darkgreen-color: #485410;
+  --white-color: #fff;
+  --black-color: #39312d;
+  --darkblack-color: #212529;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-weight: bold;
 }
@@ -32,16 +41,23 @@ section .heading h2 {
   margin-top: 10px;
 }
 
-.red-divider{
+.blue-divider{
   width: 100px;
   height: 2px;
-  background: #F8E89A;
+  background: var(--lightblue-color);
   margin: 0 auto;
 }
 .white-divider{
   width: 100px;
   height: 2px;
-  background: #fff;
+  background: var(--white-color);
+  margin: 0 auto;
+}
+
+.green-divider{
+  width: 100px;
+  height: 2px;
+  background: var(--darkgreen-color);
   margin: 0 auto;
 }
 
@@ -51,23 +67,28 @@ section .heading h2 {
 
 /* MENU */
 .navbar {
-    background-color: rgb(248,232,154,0.80);
+    background-color: rgba(112,128,132,0.8);
     font-size: 12px;
-    border-bottom: 1px solid #fff;
-    letter-spacing: 4px;
+    border-bottom: 1px solid var(--white-color);
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
 }
 .nav-pills .nav-link{
-    color: rgb(51,51,51) !important;
+    color: var(--white-color) !important;
     text-align: center;
 }
-.nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-    color: rgb(51,51,51) !important;
-    background-color: #fff !important;
+.nav-pills .nav-link.active {
+    color:var(--main-blue) !important;
+    background-color: var(--white-color)!important;
 }
+
+.nav-pills .nav-link:hover {
+  color:var(--lightblue-color)!important;
+}
+
 .navbar-toggler{
-    color: #fff !important;
+    color:var(--white-color) !important;
     border-style: none;
 }
 
@@ -104,16 +125,18 @@ section .heading h2 {
 /*ABOUT*/
 #about{
   padding-top:50px;
+  /*
   background-image: url("wallpaper3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  */
 }
 
 #about img {
-  border-radius: 60%;
-  height: 16rem;
-  width: 13rem;
+  border-radius: 100%;
+  height: 13rem;
+  width: 11rem;
 }
 .profile-picture{
   text-align: center;
@@ -123,38 +146,38 @@ section .heading h2 {
 }
 
 
-#about .heading h1{
-  color:#39312d;
+#about .heading h2{
+  color:var(--black-color);
   text-transform: uppercase;
 }
-#about .heading h3{
-  color:rgb(20,20,20,0.77);
+#about .heading h4{
+  color:var(--darkblack-color);
 }
 #about .heading h5{
-  color:rgb(20,20,20,0.77);
+  color:var(--darkblack-color);
 }
 
 .button1{
   font-weight: bold;
   text-transform: uppercase;
-  color:#39312d;
-  border: 2px solid #39312d;
+  color:var(--black-color);
+  border: 2px solid var(--black-color);
   display: inline-block;
   margin-top: 20px;
-  padding: 18px 50px;
+  padding: 15px 30px;
   border-radius: 3px;
   transition: all 0.3s ease-in 0s; /*pour animation changement couleur*/
 }
 .button1:hover{
-  background: #fff;
-  color: #39312d;
+  background:var(--main-blue);
+  color: var(--white-color);
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--main-blue);
 }
 
 /*SKILLS*/
 #skills{
-  background: #fff;
+  background: var(--main-blue);
 
 }
 #skills ul {
@@ -169,7 +192,7 @@ section .heading h2 {
   margin-bottom: 0.35rem;
 }
 #skills .heading h2 {
-  color: #485410;
+  color: var(--white-color);
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
 }
@@ -177,20 +200,28 @@ section .heading h2 {
     font-family: 'FontAwesome';
     content: "\f068";
     float: right;
+    color: var(--darkgreen-color);
 }
+
+#skills .accordion .card-header:hover {
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+#skills .accordion .card-header[aria-expanded="true"] {
+  background-color: var(--white-color)!important;
+}
+
 #skills .accordion .card-header.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\f067";
 }
-
 #skills .progress {
   height: 1.7rem;
   margin: 30px 20px;
   background: #ddd;
 }
-
 #skills .progress-bar {
-  background: #485410;
+  background: var(--darkgreen-color);
 }
 #skills .progress h5{
   text-shadow: 1px 1px 1px #000;
@@ -201,11 +232,11 @@ section .heading h2 {
 /*EXPERIENCE*/
 
 #experience {
-  background: #F8E89A;
+  background: var(--white-color);
 }
 
 #experience .heading h2 {
-  color: #fff;
+  color:var(--main-blue);
   text-shadow: 0.15px 0.15px 0.15px rgb(51,51,51,0.77);
 }
 
@@ -224,7 +255,7 @@ section .heading h2 {
   position: absolute;
   content: " ";
   width: 5px;
-  background-color: #485410;
+  background-color: var(--darkgreen-color);
   left: 50%;
   margin-left: -2.5px;
 }
@@ -256,7 +287,7 @@ section .heading h2 {
 }
 
 .timeline li .timeline-badge  {
-  color: #485410;
+  color:var(--main-blue);
   width: 50px;
   line-height: 50px;
   font-size: 20px;
@@ -288,7 +319,7 @@ section .heading h2 {
   padding: 20px 25px;
   position: relative;
   box-shadow: 0 1px 6px rgba(0,0,0,0.175);
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .timeline-panel-container-inverted .timeline-panel {
@@ -302,8 +333,8 @@ section .heading h2 {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid var(--white-color);
+  border-right: 0 solid var(--white-color);
   border-bottom: 14px solid transparent;
   content: " "; /* pour que l'elmt after apparaisse à l'écran, on a besoin de lui
   donner un contenu */
@@ -322,23 +353,27 @@ section .heading h2 {
 }
 
 .timeline-heading h4 {
-  color: rgb(72,84,16,0.8);
+  color: var(--darkgreen-color);
+  font-size: 1.2rem;
 }
 
 /* FORMATION */
 
 #formation {
-  background: #fff;
+  background: var(--main-blue);
 }
 
 #formation .heading h2 {
-  color: #485410;
+  color: var(--white-color);
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
-}/*
+}
+
+/*
 .col-md-6 {
   width: 372px;
 }*/
+
 .formation-block {
   /*width: 80%;*/
   width: 100%;
@@ -346,45 +381,39 @@ section .heading h2 {
   margin: 0 auto;
   text-align: center;
   padding: 30px;
-  background: #ddd;
+  background: var(--white-color);
   border-radius: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--white-color);
   margin-bottom: 20px;
 }
 
 .formation-block h5 {
   color: #888;
-  font-size: 15px;
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
-.formation-block h5 .fas {
-  font-size: 40px;
-}
-
-.formation-block h3 {
-  color: rgb(51,51,51,0.65);
-  font-size: 1.5rem;
+.formation-block .fas {
+  font-size: 30px;
 }
 
 .formation-block h4 {
+  color: var(--darkgreen-color);
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
 
 .formation-block p {
-  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.formation-block .red-divider {
+.formation-block .green-divider {
   margin-bottom: 20px;
-  background: #485410 !important;
 }
 
 /*PORTFOLIO*/
 #portfolio {
-  background: #F8E89A;
+  background: var(--white-color);
   padding: 45px 0 0 0;
 }
 #portfolio p {
@@ -395,7 +424,7 @@ section .heading h2 {
   margin-bottom: 5rem;
 }
 #portfolio .heading h2 {
-  color: #fff;
+  color: var(--main-blue);
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
 }
@@ -429,11 +458,11 @@ section .heading h2 {
 
 /*Recommandations*/
 /*#recommandations {
-  background: #fff;
+  background: var(--white-color);
 }
 
 #recommandations h2 {
-  color: #485410;
+  color: var(--darkgreen-color);
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 }
 
@@ -441,19 +470,19 @@ section .heading h2 {
   background: #F8E89A;
 }
 #recommandations h2 {
-  color: #fff;
+  color: var(--white-color);
   text-shadow: 0.5px 0.5px 0.5px rgb(51,51,51,0.77);
 
 }
 
 .carousel-control-prev {
   background-image:none;
-  color: #485410;
+  color: var(--darkgreen-color);
 }
 
 .carousel-control-next {
   background-image:none;
-  color: #485410;
+  color: var(--darkgreen-color);
 }
 .carousel-indicators {
 bottom: -40px;
@@ -465,11 +494,11 @@ bottom: -40px;
   text-indent: 0;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid #485410;
+  border: 1px solid var(--darkgreen-color);
 
 }
 .carousel-indicators li.active {
-  background-color: #485410;
+  background-color: var(--darkgreen-color);
 }
 
 #myCarousel .carousel-item {
@@ -477,7 +506,7 @@ bottom: -40px;
 }
 
 #myCarousel .carousel-item h3 {
-  color: #485410;
+  color: var(--darkgreen-color);
   font-style: italic;
 }
 */
@@ -489,14 +518,15 @@ footer {
 }
 footer .fas {
   font-size: 25px;
-  color: #F8E89A;
+  color: var(--white-color);
   height: 30px;
 }
 footer .fas:hover {
   font-size: 27px;
+  color: var(--lightblue-color);
 }
 footer h5 {
-  color: #fff;
+  color: var(--white-color);
   font-weight: normal;
   margin: 20px auto;
 }
