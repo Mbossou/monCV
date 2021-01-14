@@ -199,7 +199,7 @@ section .heading h4 {
     font-family: 'FontAwesome';
     content: "\f068";
     float: right;
-    color: var(--darkgreen-color);
+    color: var(--darkblack-color);
 }
 
 #skills .accordion .card-header:hover {
@@ -220,7 +220,7 @@ section .heading h4 {
   background: #ddd;
 }
 #skills .progress-bar {
-  background: var(--darkgreen-color);
+  background: var(--darkblack-color);
 }
 #skills .progress h5{
   text-shadow: 1px 1px 1px #000;
@@ -260,7 +260,7 @@ section .heading h4 {
   position: absolute;
   content: " ";
   width: 5px;
-  background-color: var(--darkgreen-color);
+  background-color: var(--darkblack-color);
   left: 50%;
   margin-left: -2.5px;
 }
@@ -358,7 +358,7 @@ section .heading h4 {
 }
 
 .timeline-heading h4 {
-  color: var(--darkgreen-color);
+  color: var(--main-blue);
   font-size: 1rem;
 }
 
@@ -403,7 +403,7 @@ section .heading h4 {
 }
 
 .formation-block h4 {
-  color: var(--darkgreen-color);
+  color: var(--darkblack-color);
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
@@ -412,7 +412,7 @@ section .heading h4 {
   margin-bottom: 0.5rem;
 }
 
-.formation-block .green-divider {
+.formation-block .blue-divider {
   margin-bottom: 20px;
 }
 
@@ -438,6 +438,7 @@ section .heading h4 {
   text-align: center;
   margin-top: 1rem;
   margin-bottom:  1rem;
+  font-size: 1.2rem;
 }
 
 #portfolio .col-sm-6 {
