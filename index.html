@@ -11,8 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-
+  
   <title>Mélissa Bossou - le profil qu'il vous faut</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -35,18 +34,66 @@
   </nav>
 
   <section id="about" class="container-fluid">
-    <div class="col-xs-8 col-md-4 profile-picture">
-      <img src="images/me.jpg" alt="QRcode Profil Linkedin"  /><!-- class="rounded-circle">-->
+    <div class="col-xs-8 col-md-4 col-lg-4 profile-picture">
+      <img src="images/photoCV.png" alt="Photo professionnelle"  /><!-- class="rounded-circle">-->
     </div>
     <div class="heading">
       <h2>Mélissa Bossou</h2>
       <h4>Digital Addict spécialisée dans l'UX/UI</h4>
-      <h5>recherche un poste dans le domaine du digital</h5>
+      <h5>à la recherche d'une nouvelle opportunité professionnelle</h5>
+      <div class="rubrique-contact">
+        <h5 class="titre-contact">Contact :</h5>
+        <div class="infos-contact">
+          <div class="col-1">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </div>
+          <div class="col-2">
+            <div class="contact contact1"><a href="mailto:melissa.bossou@protonmail.com" class="email">melissa.bossou@protonmail.com</a></div>
+            <div class="contact contact2"><a href="tel:+33619186477" class="tel">06 19 18 64 77</a></div>
+            <div class="contact contact3"><a href="https://www.linkedin.com/in/mbossou/" class="linkedin" target="_blank">https://linkedin.com/in/mbossou/</a></div>
+          </div>
+          </div>
+      </div>
       <div style="width:100%;">
         <a href="docs/CV_MB_2021.pdf" style="text-transform: uppercase;" class="button1" target="_blank">mon CV (pdf)</a>
       </div>
-        <a href="https://qrco.de/bbua2D" style="text-transform: uppercase;" class="button2" target="_blank">Contactez-moi</a>
-      
+    </div>
+  </section>
+  <section id="about-mobile" class="container-fluid">
+    <div class="col-xs-8 col-md-4 profile-picture">
+      <img src="images/me.jpg" alt="Photo professionnelle"  /><!-- class="rounded-circle">-->
+    </div>
+    <div class="heading">
+      <h2>Mélissa Bossou</h2>
+      <h4>Digital Addict spécialisée dans l'UX/UI</h4>
+      <h5>à la recherche d'une nouvelle opportunité professionnelle</h5>
+      <div style="width:100%;">
+        <a href="docs/CV_MB_2021.pdf" style="text-transform: uppercase;" class="button1" target="_blank">mon CV (pdf)</a>
+      </div>
+      <button id="btnPopup" style="text-transform: uppercase;" class="button2">Contactez-moi</button>  
+        <div id="overlay" class="overlay">
+          <div id="popup" class="popup">
+            <div class="rubrique-contact">
+              <h5 class="titre-contact">Contact : <span id="btnClose" class="btnClose">&times;</span></h5>
+              
+              <div class="infos-contact">
+                <div class="col-1">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </div>
+                <div class="col-2">
+                  <div class="contact contact1"><a href="mailto:melissa.bossou@protonmail.com" class="email">melissa.bossou@protonmail.com</a></div>
+                  <div class="contact contact2"><a href="tel:+33619186477" class="tel">06 19 18 64 77</a></div>
+                  <div class="contact contact3"><a href="https://www.linkedin.com/in/mbossou/" class="linkedin" target="_blank">https://linkedin.com/in/mbossou/</a></div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
     </div>
   </section>
 
@@ -258,6 +305,29 @@
         <div class="timeline-panel-container">
           <div class="timeline-panel">
           <div class="timeline-heading">
+            <p class="p-h5">DIAC, GROUPE RCI BANK AND SERVICES</p>
+            <h4>ALTERNANCE - Chef de projets digital junior</h4>
+            <p class="text-muted"><small class="far fa-clock"> Septembre 2019 (Diac, Noisy-le-Grand).</small></p>
+          </div>
+          <div class="timeline-body">
+            <p>
+              <i class="far fa-circle"></i> Pilotage de projets transversaux, animation d’ateliers et de comités de pilotage.
+              </p>
+              <p>
+                <i class="far fa-circle"></i> Rédaction d’un cahier des charges pour mise en conformité du système de purge dans les systèmes d’information.
+              </p>
+              <p>
+                <i class="far fa-circle"></i> Rédaction d’une procédure opérationnelle métier.</p>
+            </div>
+        </div>
+        </div>
+      </li>
+      <li>
+        <div class="timeline-badge"><span class="fas fa-briefcase"></span>
+        </div>
+        <div class="timeline-panel-container-inverted">
+          <div class="timeline-panel">
+          <div class="timeline-heading">
             <p class="p-h5">CENTRALESUPÉLEC</p>
             <h4>STAGE - Préparation de la publication en ligne de PEERAMID</h4>
             <p class="text-muted"><small class="far fa-clock"> Octobre 2018 (Loria, Villiers-lès-Nancy).</small></p>
@@ -271,27 +341,8 @@
                 <i class="far fa-circle"></i> Conception de tutoriels d'utilisation de la plateforme PEERAMID.
               </p>
               <p>
-                <i class="far fa-circle"></i> Veille technologique sur les différents outils en ligne permettant la pratique de l'évaluation par les pairs.</p>
-            </div>
-        </div>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-badge"><span class="fas fa-briefcase"></span>
-        </div>
-        <div class="timeline-panel-container-inverted">
-          <div class="timeline-panel">
-          <div class="timeline-heading">
-            <p class="p-h5">CENTRALESUPÉLEC</p>
-            <h4>STAGE - Développement web​</h4>
-            <p class="text-muted"><small class="far fa-clock"> Juillet 2018 (LORIA, Villiers-lès-Nancy).</small></p>
-          </div>
-          <div class="timeline-body">
-              <p>
-                  <i class="far fa-circle"></i> Conception de l'architecture structurelle d’un site web visant à accompagner la publication
-                  de l’outil pédagogique Peeramid (plateforme en ligne d’évaluation par les pairs). <br />
-                  <span style="font-style: italic;"> Ce stage a été réalisé dans la continuité d’un projet d’enquête sur la pratique de l'évaluation par les pairs dans l’enseignement supérieur.</span>
-                </p>
+                <i class="far fa-circle"></i> Veille technologique sur les différents outils en ligne permettant la pratique de l'évaluation par les pairs.
+              </p>
               <div>
         </div>
         </div>
@@ -302,16 +353,15 @@
           <div class="timeline-panel-container">
             <div class="timeline-panel">
             <div class="timeline-heading">
-              <p class="p-h5">UNIVERSITÉ DE LORRAINE</p>
-              <h4>PROJET TUTORÉ - Recueil des besoins utilisateurs</h4>
-              <p class="text-muted"><small class="far fa-clock"> Décembre 2017 - Mai 2018 (Nancy).</small></p>
+              <p class="p-h5">CENTRALESUPÉLEC</p>
+              <h4>STAGE - Développement web​</h4>
+              <p class="text-muted"><small class="far fa-clock"> Juillet 2018 (LORIA, Villiers-lès-Nancy).</small></p>
             </div>
             <div class="timeline-body">
               <p>
-                  <i class="far fa-circle"></i> Enquête auprès des enseignants de l'Université de Lorraine afin d'identifier les cas d'usages de l'évaluation par les pairs dans l'enseignement supérieur.
-                </p>
-                <p>
-                  <i class="far fa-circle"></i> Établissement d'une liste de recommandations d'améliorations de la plateforme numérique PEERAMID suite au recueil et à l'analyse des besoins utilisateurs.
+                  <i class="far fa-circle"></i> Conception de l'architecture structurelle d’un site web visant à accompagner la publication
+                  de l’outil pédagogique Peeramid (plateforme en ligne d’évaluation par les pairs).<br />
+                  <span style="font-style: italic;"> Ce stage a été réalisé dans la continuité d’un projet d’enquête sur la pratique de l'évaluation par les pairs dans l’enseignement supérieur.</span>
                 </p>
               </div>
           </div>
@@ -333,7 +383,7 @@
         <div class="formation-block">
           <h5> Rentrée 2019 - 2020 </br>(Paris, 75011)</h5>
           <span class="fas fa-graduation-cap"></span>
-          <h4>MBA 2 - Expert Digital UX/UI</h4>
+          <h4>Master 2 - Expert Digital UX/UI</h4>
           <h5 style="color:#212529;">Digital School of Paris (DSP)</h5>
           <div class="blue-divider"></div>
             <p>Design d'interaction UX/UI - Management de projet - Marketing Digital - Ergonomie web - Publication assistée par ordinateur (PAO) </p>
@@ -470,6 +520,6 @@
   <h5>2021 - Site web développé par Mélissa Bossou</h5></span></a>
 
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

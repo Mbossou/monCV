@@ -41,6 +41,7 @@ section{
 section .heading{
   text-align: center;
   padding-bottom: 40px;
+  margin: auto;
 }
 
 section .heading h4 {
@@ -129,77 +130,346 @@ section .heading h4 {
 }
 */
 
-/*ABOUT*/
-#about{
-  padding-top:50px;/*
+@media (min-width: 1024px) {
+  /*ABOUT*/
+  #about {
+  padding-top:50px;
+  padding-bottom: 0px!important;
+  min-height: 85vh;
+  display: flex;/*
   background-image: url("wallpaper2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;*/
 }
 
+  #about-mobile {
+    display: none;
+}
+
 #about img {
-  border-radius: 100%;
-  height: 13.5rem;
-  width: 15rem;
-  border: 1px solid var(--white-color);
+  height: 90%;
+  position: absolute;
+  bottom: -1px;
 }
 
-.profile-picture{
+#about .profile-picture {
   text-align: center;
-  margin: 0 auto 30px auto;
-  float: none;
-
+  margin: 0px auto 0px auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 40%;
 }
 
+#about .heading {
+  flex-basis: 60%;
+}
 
 #about .heading h2{
   color:var(--black-color);
   text-transform: uppercase;
 }
+
 #about .heading h4{
   color:var(--darkblack-color);
 }
+
 #about .heading h5{
   color:var(--darkblack-color);
+  margin-bottom: 0px;
 }
 
-.button1{
+#about .button1{
   font-weight: bold;
   text-transform: uppercase;
   color: var(--white-color);
   background-color: rgba(112, 128, 132);
   border: 1px solid var(--main-blue);
   display: inline-block;
-  margin-top: 20px;
-  padding: 15px 30px;
-  border-radius: 30px;
+  margin-top: 30px;
+  padding: 15px 70px;
+  border-radius: 10px;
   transition: all 0.3s ease-in 0s; /*pour animation changement couleur*/
+  width:70%;
 }
-.button1:hover{
+
+#about .button1:hover{
   color: var(--black-color);
   background-color:transparent;
   border: 1px solid var(--black-color);
   text-decoration: none;
 }
 
-.button2{
+#about .rubrique-contact {
+  padding: 15px 90px 20px 90px;
+  margin-top: 30px;
+  background-color: var(--main-blue);
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: var(--main-blue);
+  border-width: 1px;
+  width: 70%;
+  border-radius: 2%;
+}
+
+#about .rubrique-contact:hover {
+  background-color: transparent;
+  border-color: var(--darkblack-color);
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.3s ease-in 0s;
+}
+
+#about .rubrique-contact .infos-contact .col-2 a {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+#about .rubrique-contact:hover .infos-contact .col-2 a {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+
+#about .rubrique-contact:hover .infos-contact .col-2 a:hover {
+  color:var(--black-color);
+  text-decoration: none;
+}
+
+#about .rubrique-contact:hover .titre-contact {
+  color: var(--black-color);
+}
+
+#about .rubrique-contact .titre-contact {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+#about .rubrique-contact .infos-contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#about .rubrique-contact .infos-contact .col-1 {
+  width: 20px
+}
+
+#about .rubrique-contact .infos-contact .col-1 .fa-phone-square,.fa-linkedin-square {
+  margin-top: 10px;
+}
+
+#about .rubrique-contact .infos-contact .col-2 {
+  min-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: min-content;
+}
+
+#about .rubrique-contact .infos-contact .col-2 .contact {
+  width: 100%;
+  text-align: left;
+}
+
+.rubrique-contact .infos-contact .col-2 .tel,.linkedin {
+  margin-top: 10px;
+}
+
+#about .rubrique-contact i {
+  padding-right: 20px;
+  color: var(--white-color);
+}
+
+#about .rubrique-contact:hover i {
+  padding-right: 20px;
+  color: var(--black-color);
+}
+}
+
+@media (max-width: 1023px) {
+/*ABOUT MOBILE*/
+#about-mobile {
+  padding-top:50px;
+}
+
+#about {
+  display: none;
+}
+
+#about-mobile img {
+  border-radius: 100%;
+  height: 13.5rem;
+  width: 15rem;
+  border: 1px solid var(--white-color);
+}
+
+#about-mobile .profile-picture{
+  text-align: center;
+  margin: 0 auto 30px auto;
+  float: none;
+}
+
+#about-mobile .heading {
+  padding-bottom: 0px;
+}
+
+#about-mobile .heading h2{
+  color:var(--darkblack-color);
+  text-transform: uppercase;
+}
+
+#about-mobile .heading h4{
+  color:var(--darkblack-color);
+}
+
+#about-mobile .heading h5{
+  color:var(--darkblack-color);
+}
+
+#about-mobile .button1{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(112, 128, 132);
+  border: 1px solid var(--main-blue);
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in 0s; /*pour animation changement couleur*/
+}
+
+#about-mobile .button1:hover{
+  color: var(--black-color);
+  background-color:transparent;
+  border: 1px solid var(--black-color);
+  text-decoration: none;
+}
+
+#about-mobile .button2{
   font-weight: bold;
   text-transform: uppercase;
   background: rgba(112, 128, 132);
   color: var(--white-color);
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 15px 30px;
   border-radius: 30px;
   border: 1px solid var(--main-blue);
   transition: all 0.3s ease-in 0s; /*pour animation changement couleur*/
 }
-.button2:hover{
+#about-mobile .button2:hover{
   color: var(--black-color);
   background-color:transparent;
   border: 1px solid var(--black-color);
   text-decoration: none;
+  cursor: pointer;
+}
+
+#about-mobile .overlay {
+  position: fixed;
+  left: 0px;
+  top:0px;
+  background-color: rgba(0,0 ,0 , 0.5);
+  width: 100%;
+  height: 100%;
+  z-index:1;
+  display:none;
+  }
+
+#about-mobile .popup {
+  margin: 16% auto;
+  max-width : 55%;
+  background-color: var(--main-blue);
+  padding: 0px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  }
+
+  #about-mobile .rubrique-contact {
+  padding: 15px 0px 20px 0px;
+  margin-top: 30px;
+  background-color: var(--main-blue);
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: var(--main-blue);
+  border-width: 1px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#about-mobile .btnClose {
+  float: right;
+  font-size:16pt;
+  cursor: pointer;
+  color: var(--white-color);
+  }
+
+
+#about-mobile .rubrique-contact .infos-contact .col-2 a {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+#about-mobile .rubrique-contact:hover .infos-contact .col-2 a {
+  text-decoration: underline;
+}
+
+#about-mobile .rubrique-contact:hover .infos-contact .col-2 a:hover {
+  text-decoration: none;
+}
+
+#about-mobile .rubrique-contact .titre-contact {
+  color: var(--white-color);
+  text-transform: uppercase;
+  padding: 0px 20px 0px 20px;
+}
+
+#about-mobile .rubrique-contact .infos-contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 15px;
+  border-top-style: solid;
+  border-top-color: var(--white-color);
+  border-top-width: 1px;
+  padding-top:20px;
+}
+
+#about-mobile .rubrique-contact .infos-contact .col-1 {
+  width: 20px
+}
+
+#about-mobile .rubrique-contact .infos-contact .col-1 .fa-phone-square,.fa-linkedin-square {
+  margin-top: 10px;
+}
+
+#about-mobile .rubrique-contact .infos-contact .col-2 {
+  min-width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: min-content;
+}
+
+#about-mobile .rubrique-contact .infos-contact .col-2 .contact {
+  width: 100%;
+  text-align: left;
+}
+
+#about-mobile .rubrique-contact .infos-contact .col-2 .tel,.linkedin {
+  margin-top: 10px;
+}
+
+#about-mobile .rubrique-contact i {
+  padding-right: 20px;
+  color: var(--white-color);
+}
 }
 
 /*SKILLS*/
